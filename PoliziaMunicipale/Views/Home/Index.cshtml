@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <div class="card text-center shadow">
+        <div class="card-body">
+            <img src="~/Content/img/Stato.png" alt="Cover Image">
+            <h1>Benvenuto nel portale della Polizei</h1>
+            <h3 class="mb-4">Registra o visualizza i trasgressori</h3>
+            <div>
+                <a href="@Url.Action("GetAnagrafica", "Anagrafica")" class="btn btn-primary">Anagrafica</a>
+                <a href="@Url.Action("GetVerbali", "Verbale")" class="btn btn-primary">Verbali</a>
+                <a href="@Url.Action("GetContestazione", "Verbale")" class="btn btn-primary">Contestazioni</a>
+                <a href="@Url.Action("Index", "Altro")" class="btn btn-primary">Altro</a>
+            </div>
+        </div>
+    </div>
+</main>

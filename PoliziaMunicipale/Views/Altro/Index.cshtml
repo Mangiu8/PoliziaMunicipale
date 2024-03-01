@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<main>
+    <div class="card text-center shadow">
+        <div class="card-body">
+            <img src="~/Content/img/Stato.png" alt="Cover Image">
+            <h3 class="mb-4">Altre azioni</h3>
+            <div>
+                <a href="@Url.Action("VerbaliXTrasgressore", "Altro")" class="btn btn-primary">Verbali per trasgressore</a>
+                <a href="@Url.Action("Puntidecurtati", "Altro")" class="btn btn-primary">Punti per trasgressore</a>
+                <a href="@Url.Action("GetVerbaliDecurtamentoPuntiMaggioreDi10", "Altro")" class="btn btn-primary">Dettaglio decurtazioni</a>
+                <a href="@Url.Action("GetVerbaliMax400", "Altro")" class="btn btn-primary">Verbali maggiori di 400</a>
+            </div>
+        </div>
+    </div>
+</main>
