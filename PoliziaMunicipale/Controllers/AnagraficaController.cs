@@ -7,6 +7,8 @@ using System.Web.Mvc;
 
 namespace PoliziaMunicipale.Controllers
 {
+    // Controller per la gestione dei dati anagrafici
+    // fa la get dei dati e stampa la view
     public class AnagraficaController : Controller
     {
         // GET: Anagrafica
@@ -53,6 +55,7 @@ namespace PoliziaMunicipale.Controllers
         }
         [HttpPost]
 
+        // Metodo per l'inserimento di un nuovo trasgressore
         public ActionResult NewAnagrafica(Trasgressori trasgressore)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["Polizia"].ConnectionString;

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PoliziaMunicipale.Models
 {
+    // la classe Verbale rappresenta un verbale di violazione
     public class Verbale
     {
         public int IDVerbale { get; set; }

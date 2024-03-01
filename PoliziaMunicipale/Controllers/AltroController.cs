@@ -15,6 +15,7 @@ namespace PoliziaMunicipale.Controllers
             return View();
         }
         [HttpGet]
+        // Metodo per visualizzare i verbali con importo maggiore di 400
         public ActionResult GetVerbaliMax400()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["Polizia"].ConnectionString;
@@ -53,6 +54,7 @@ namespace PoliziaMunicipale.Controllers
             return View(VerbaliGroup);
         }
         [HttpGet]
+        // Metodo per visualizzare i verbali con decurtamento punti maggiore di 10
         public ActionResult GetVerbaliDecurtamentoPuntiMaggioreDi10()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["Polizia"].ConnectionString;
@@ -91,6 +93,8 @@ namespace PoliziaMunicipale.Controllers
             return View(VerbaliGroup10);
         }
 
+        // Metodo per visualizzare i verbali totale ordinati per trasgressore
+
         public ActionResult VerbaliXTrasgressore()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["Polizia"].ConnectionString.ToString();
@@ -125,6 +129,7 @@ namespace PoliziaMunicipale.Controllers
             return View(VerbalixTrasgressore);
         }
 
+        // Metodo per visualizzare i punti decurtati ordinati per trasgressore
         public ActionResult Puntidecurtati()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["Polizia"].ConnectionString.ToString();

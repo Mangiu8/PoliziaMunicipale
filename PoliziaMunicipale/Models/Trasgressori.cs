@@ -1,5 +1,6 @@
 ﻿namespace PoliziaMunicipale.Models
 {
+    // la classe Trasgressori rappresenta la tabella DatiAnagrafici del database
     public class Trasgressori
     {
         public int IDAnagrafica { get; set; }

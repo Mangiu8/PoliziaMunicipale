@@ -10,6 +10,8 @@ namespace PoliziaMunicipale.Controllers
     public class VerbaleController : Controller
     {
         //GET: Verbale
+
+        // Metodo per la visualizzazione dei verbali
         [HttpGet]
         public ActionResult GetVerbali()
         {
@@ -50,6 +52,7 @@ namespace PoliziaMunicipale.Controllers
             return View(Verbali);
         }
 
+        // Metodi per l'inserimento di un nuovo verbale
         public ActionResult NewVerbale()
         {
             return View();
@@ -85,6 +88,8 @@ namespace PoliziaMunicipale.Controllers
             }
             return RedirectToAction("GetVerbali");
         }
+
+        // Metodo per la visualizzazione delle contestazioni
 
         [HttpGet]
         public ActionResult GetContestazione()
